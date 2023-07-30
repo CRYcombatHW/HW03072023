@@ -20,7 +20,6 @@ namespace HW03072023
 			InitializeComponent();
 		}
 
-		// If you want to implement "*" only
 		private static string WildCardToRegular(string value) {
 			return "^" + Regex.Escape(value).Replace("\\*", ".*") + "$";
 		}
